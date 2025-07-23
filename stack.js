@@ -4,20 +4,27 @@
 class stack{
     constructor()
     {
-        this.stack=[]
+        this.stack1=[]
     }
     
     push(element)
     {
-        return this.stack.push(element)
+        return this.stack1.push(element)
     }
     pop()
     {
-        if(this.stack.length===0)
+        if(this.stack1.length===0)
         {
             return "stack is empty"
         }
-        return this.stack.pop()
+        return this.stack1.pop()
+    }
+    print()
+    {
+        for(let i=0;i<this.stack1.length;i++)
+        {
+            console.log(this.stack1[i])
+        }
     }
 }
 
@@ -27,6 +34,8 @@ stk.push("the")
 stk.push("sky")
 stk.push("is")
 stk.push("blue")
+
+stk.print()
 
 console.log(stk.pop()+" "+ stk.pop()+" "+stk.pop()+" "+stk.pop())
 
