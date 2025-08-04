@@ -4,6 +4,7 @@ let person={
     name:"malinda",
     age:24
 }
+
 let arr =[10,4,50,"mmm",person];
 
 //to access to the array
