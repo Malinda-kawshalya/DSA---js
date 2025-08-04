@@ -35,7 +35,20 @@ function removeDuplicates2(array) {
 console.log("foreach method " +removeDuplicates2(arr))
 
 //go through the each element and checks this value already include in unique array and if not add to it
+
 //--------------------------------------------------------------------------------------------------------------
 
 
-function 
+function removeDuplicates3(array) 
+{
+  const map = new Map(array.map(item => [item, true])); //make key value pairs 
+  return [...map.keys()];
+}
+console.log("map method " +removeDuplicates3(arr))
+
+//-----------------------------------------------------------------------------------------------------------------
+
+let removeDuplicates4 = [...new Set(arr)]
+console.log("set method " +removeDuplicates4)
+
+//-----------------------------------------------------------------------------------------------------------
